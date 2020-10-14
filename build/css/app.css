@@ -1,0 +1,11 @@
+body{
+    padding-top:4rem;
+    background-image: url(../images/items-organized-on-shelves-3687999.jpg);
+    background-size: cover;
+}
+
+.container{
+    background-color:white;
+    padding: 2rem;
+    margin-top: 4rem;
+}

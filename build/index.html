@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoopinglist</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="display:none;"></h1>
+        <h2  class="col s8">Shoppinglist</h2>
+        <div class="row">
+            <div class="col s12 m8">
+                <p>Add your items to the shoppinglist below.</p>
+                <p>To remove an item from your list just click on it.</p>
+                <form id="form">
+
+                    <div class="input-field col s12 m8">
+                        <input placeholder="Apples" id="items" type="text">
+                        <label for="items">What do you need?</label>
+                    </div>
+                    <button class="btn-large waves-effect waves-light col s12 m3" type="submit" name="action"
+                        id="add-button">add
+                        to
+                        list
+                        <i class="material-icons left">add</i>
+                    </button>
+
+                </form>
+
+
+
+
+                <ul class="collection col s12 m11" id="shoppinglist"></ul>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="row">
+                    <div class="col s12" id="installContainer">
+                        <div class="card-panel teal lighten-5">
+                            <p>Add the shopppinglist to your homescreen</p>
+                            <button class="btn waves-effect waves-light" id="butInstall" type="button">add to homescreen
+                                <i class="material-icons left">launch</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel teal lighten-5">
+                            <p>Get notified when an item was added to the shoppinglist</p>
+                            <button disabled class="js-push-btn btn waves-effect waves-light">
+                                Enable Push Messaging
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" async src="js/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
